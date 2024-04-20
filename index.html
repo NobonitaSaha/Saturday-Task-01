@@ -31,17 +31,19 @@
 		<div class="cookie-overlay show-overlay"></div>
 		<div class="cookie-overlay-2 show-overlay-2"></div>
 		<div class="cookie-popup" id="cookiePopup">
-			<div class="cookie-popup-img">
-				<img src="img/japan-images/images (1).jpeg" alt="">
-			</div>
-			<div class="cookie-description">
-				<div class="cookie-text">
-					<h3>あなたは18歳ですか？</h3>
-					<p>大人の方であることをご確認ください。18歳以上</p>
+			<div class="cookie-flex">
+				<div class="cookie-popup-img">
+					<img src="img/japan-images/18+.jpg" alt="">
 				</div>
-				<div class="cookie-btn">
-					<div class="cookie-double-btn">
-						<button onclick="acceptCookies()" class="cookie-accept"> 私は18歳以上です。</button>
+				<div class="cookie-description">
+					<div class="cookie-text">
+						<h3>Are you 18 years old?</h3>
+						<p>Please Confirm Your 18+ or Older</p>
+					</div>
+					<div class="cookie-btn">
+						<div class="cookie-double-btn">
+							<button onclick="acceptCookies()" class="cookie-accept"> Yes I am</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -52,6 +54,12 @@
 		/* ---------------------------------- 
 			Cookie Popup CSS Start 
 		------------------------------------- */
+		.cookie-flex{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+		}
 		.cookie-popup {
 			display: none;
 			position: fixed;
@@ -67,23 +75,26 @@
 
 		.cookie-popup.show {
 			display: block;
-			max-width: 400px;
+			max-width: 520px;
 			margin: 0 auto;
-			text-align: center;
-		}
-
-		.cookie-popup-img > img{
-			width: 100%;
-			height: auto;
 		}
 
 		.cookie-description{
-			padding: 30px 20px;
+			background-color: #4444440a;
+			padding: 50px 30px;
+		}
+
+		.cookie-popup-img > img {
+			width: 160px;
+			height: auto;
+			position: relative;
+			left: 64%;
+			transform: translateX(-50%);
 		}
 
 		.cookie-text > h3 {
 			color: #2e2e2e;
-			font-size: 30px;
+			font-size: 26px;
 			font-weight: 800;
 			margin: 10px 0px 20px 0px;
     		font-family: 'Roboto', sans-serif;
@@ -101,8 +112,8 @@
 
 		.cookie-double-btn button {
 			font-size: 15px;
-			padding: 14px 40px;
-			font-weight: 400;
+			padding: 12px 30px;
+			font-weight: 600;
 			cursor: pointer;
 			user-select: none;
 			transition-duration: 0.2s;
@@ -112,10 +123,9 @@
 			outline: 0px;
 			margin: 20px 0px 0px 0px;
 			font-family: 'Roboto', sans-serif;
-			background: #1171ed;;
+			background: #41b436;
 			color: #ffffff;
 			border: none;
-			width: 280px;
 		}
 
 		button.cookie-accept:hover {
@@ -162,7 +172,7 @@
 				position: fixed;
 				top: 50%;
 				transform: translateY(-50%);
-				margin: 0px 15px;
+				margin: 0px 50px;
 			}
 
 			.cookie-double-btn button {
@@ -179,6 +189,31 @@
 
 			.cookie-text > p {
 				font-size: 15px;
+			}
+
+			.cookie-flex {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.cookie-popup-img > img {
+				width: 150px;
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+				padding: 20px;
+			}
+
+			.cookie-popup-img {
+				background: white;
+				width: 100%;
+			}
+
+			.cookie-description {
+				background-color: #4444440a;
+				width: 100%;
+				padding: 20px;
+				text-align: center;
 			}
 		}
 
