@@ -426,6 +426,40 @@ h2.hotel-heading-left {
 -------------------------------- */
 
 
+/* --------------------------
+    Context Area Start
+----------------------------- */
+.context-area{
+    padding: 60px 0px 30px 0px;
+}
+
+.context-description{
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.context-description > h2{
+    font-size: 34px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    line-height: 50px;
+}
+
+.context-description > p{
+    font-family: 'Urbanist', sans-serif;
+    color: #9d9191;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+/* ---------------------------
+    Context area End
+------------------------------- */
+
+
 
 /* --------------------------
 	Footer Section Start
